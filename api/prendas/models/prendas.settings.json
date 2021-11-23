@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prendas",
+  "info": {
+    "name": "prendas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_prenda": {
+      "type": "string"
+    },
+    "lessons": {
+      "type": "json"
+    },
+    "referencias": {
+      "via": "prendas",
+      "collection": "referencia"
+    }
+  }
+}

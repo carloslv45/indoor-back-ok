@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "referencias",
+  "info": {
+    "name": "referencia"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "prendas": {
+      "collection": "prendas",
+      "via": "referencias",
+      "dominant": true
+    },
+    "descripcion": {
+      "type": "richtext"
+    }
+  }
+}

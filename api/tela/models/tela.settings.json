@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "referencias",
+  "collectionName": "telas",
   "info": {
-    "name": "referencia",
-    "description": ""
+    "name": "tela"
   },
   "options": {
     "increments": true,
@@ -12,8 +11,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "descripcion": {
-      "type": "richtext"
+    "nombre_tela": {
+      "type": "string"
     }
   }
 }

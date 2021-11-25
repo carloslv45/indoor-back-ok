@@ -79,6 +79,10 @@
     },
     "ciudad": {
       "type": "string"
+    },
+    "pedidos": {
+      "via": "user",
+      "collection": "pedidos"
     }
   }
 }

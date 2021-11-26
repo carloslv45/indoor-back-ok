@@ -69,7 +69,9 @@
       "type": "boolean"
     },
     "cedula": {
-      "type": "string"
+      "type": "string",
+      "required": false,
+      "unique": true
     },
     "celular": {
       "type": "integer"

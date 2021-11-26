@@ -13,9 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "user": {
+      "via": "pedidos",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "pedidos"
+      "model": "user"
     },
     "imagen": {
       "model": "file",

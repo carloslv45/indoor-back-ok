@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tallas",
+  "info": {
+    "name": "tallas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "talla": {
+      "type": "string"
+    }
+  }
+}

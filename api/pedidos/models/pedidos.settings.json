@@ -40,6 +40,21 @@
     },
     "OP": {
       "type": "string"
+    },
+    "detalles_pedido": {
+      "type": "text"
+    },
+    "numero": {
+      "type": "integer"
+    },
+    "nombre_prenda": {
+      "type": "string"
+    },
+    "observaciones": {
+      "type": "text"
+    },
+    "talla": {
+      "type": "string"
     }
   }
 }

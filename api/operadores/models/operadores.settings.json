@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operadores",
+  "info": {
+    "name": "operadores"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "icono": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

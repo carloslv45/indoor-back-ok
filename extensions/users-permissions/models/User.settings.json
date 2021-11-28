@@ -85,6 +85,9 @@
     "pedidos": {
       "via": "user",
       "collection": "pedidos"
+    },
+    "operador": {
+      "type": "string"
     }
   }
 }

@@ -55,6 +55,102 @@
     },
     "talla": {
       "type": "string"
+    },
+    "operadores": {
+      "collection": "operadores"
+    },
+    "fecha_inicio_programacion": {
+      "type": "string"
+    },
+    "fecha_fin_programacion": {
+      "type": "string"
+    },
+    "fecha_inicio_trazo": {
+      "type": "string"
+    },
+    "fecha_fin_trazo": {
+      "type": "string"
+    },
+    "fecha_inicio_corte": {
+      "type": "string"
+    },
+    "fecha_fin_corte": {
+      "type": "string"
+    },
+    "fecha_inicio_edicion": {
+      "type": "string"
+    },
+    "fecha_fin_edicion": {
+      "type": "string"
+    },
+    "fecha_inicio_impresion": {
+      "type": "string"
+    },
+    "fecha_fin_impresion": {
+      "type": "string"
+    },
+    "fecha_inicio_estampacion": {
+      "type": "string"
+    },
+    "fecha_fin_estampacion": {
+      "type": "string"
+    },
+    "fecha_inicio_confeccion": {
+      "type": "string"
+    },
+    "fecha_fin_confeccion": {
+      "type": "string"
+    },
+    "fecha_inicio_empaque": {
+      "type": "string"
+    },
+    "fecha_fin_empaque": {
+      "type": "string"
+    },
+    "fecha_inicio_envio": {
+      "type": "string"
+    },
+    "fecha_fin_envio": {
+      "type": "string"
+    },
+    "fecha_inicio_alistamiento": {
+      "type": "string"
+    },
+    "fecha_fin_alistamiento": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "proceso1": {
+      "type": "integer"
+    },
+    "proceso2": {
+      "type": "integer"
+    },
+    "proceso3": {
+      "type": "integer"
+    },
+    "proceso4": {
+      "type": "integer"
+    },
+    "proceso5": {
+      "type": "integer"
+    },
+    "proceso6": {
+      "type": "integer"
+    },
+    "proceso7": {
+      "type": "integer"
+    },
+    "proceso8": {
+      "type": "integer"
+    },
+    "proceso9": {
+      "type": "integer"
+    },
+    "proceso10": {
+      "type": "integer"
     }
   }
 }

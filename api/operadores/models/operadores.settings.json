@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "operadores",
   "info": {
-    "name": "operadores"
+    "name": "operadores",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -18,6 +19,21 @@
       "type": "string"
     },
     "url": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "porcentaje": {
+      "type": "decimal"
+    },
+    "responsable": {
+      "type": "string"
+    },
+    "fecha_inicio": {
+      "type": "string"
+    },
+    "fecha_fin": {
       "type": "string"
     }
   }

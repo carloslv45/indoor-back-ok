@@ -151,6 +151,10 @@
     },
     "proceso10": {
       "type": "integer"
+    },
+    "especificacions": {
+      "via": "pedido",
+      "collection": "especificacion"
     }
   }
 }

@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/pedidos": {
+    "/especificacions": {
       "get": {
         "deprecated": false,
-        "description": "Find all the pedidos's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve pedidos document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pedidos"
+                    "$ref": "#/components/schemas/Especificacion"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Pedidos"
+          "Especificacion"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new pedidos record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve pedidos document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedidos"
+                  "$ref": "#/components/schemas/Especificacion"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Pedidos"
+          "Especificacion"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPedidos"
+                "$ref": "#/components/schemas/NewEspecificacion"
               }
             }
           }
         }
       }
     },
-    "/pedidos/count": {
+    "/especificacions/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of pedidos documents",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve pedidos document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Pedidos"
+          "Especificacion"
         ],
         "parameters": []
       }
     },
-    "/pedidos/{id}": {
+    "/especificacions/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one pedidos record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve pedidos document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedidos"
+                  "$ref": "#/components/schemas/Especificacion"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Pedidos"
+          "Especificacion"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single pedidos record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve pedidos document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedidos"
+                  "$ref": "#/components/schemas/Especificacion"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Pedidos"
+          "Especificacion"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPedidos"
+                "$ref": "#/components/schemas/NewEspecificacion"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single pedidos record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single pedidos based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Pedidos"
+          "Especificacion"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Pedidos": {
+      "Especificacion": {
         "required": [
           "id"
         ],
@@ -522,152 +522,7 @@
           "id": {
             "type": "string"
           },
-          "user": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "codigo": {
-                "type": "string"
-              },
-              "apellido": {
-                "type": "string"
-              },
-              "admin": {
-                "type": "boolean"
-              },
-              "cedula": {
-                "type": "string"
-              },
-              "celular": {
-                "type": "integer"
-              },
-              "direccion": {
-                "type": "string"
-              },
-              "ciudad": {
-                "type": "string"
-              },
-              "pedidos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "operador": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "imagen": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "cedula": {
-            "type": "integer"
-          },
-          "prenda": {
+          "pedido": {
             "required": [
               "id"
             ],
@@ -675,11 +530,143 @@
               "id": {
                 "type": "string"
               },
+              "user": {
+                "type": "string"
+              },
+              "imagen": {
+                "type": "string"
+              },
+              "cedula": {
+                "type": "integer"
+              },
+              "prenda": {
+                "type": "string"
+              },
+              "referencia": {
+                "type": "string"
+              },
+              "OP": {
+                "type": "string"
+              },
+              "detalles_pedido": {
+                "type": "string"
+              },
+              "numero": {
+                "type": "integer"
+              },
               "nombre_prenda": {
                 "type": "string"
               },
-              "lessons": {
-                "type": "object"
+              "observaciones": {
+                "type": "string"
+              },
+              "talla": {
+                "type": "string"
+              },
+              "operadores": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "fecha_inicio_programacion": {
+                "type": "string"
+              },
+              "fecha_fin_programacion": {
+                "type": "string"
+              },
+              "fecha_inicio_trazo": {
+                "type": "string"
+              },
+              "fecha_fin_trazo": {
+                "type": "string"
+              },
+              "fecha_inicio_corte": {
+                "type": "string"
+              },
+              "fecha_fin_corte": {
+                "type": "string"
+              },
+              "fecha_inicio_edicion": {
+                "type": "string"
+              },
+              "fecha_fin_edicion": {
+                "type": "string"
+              },
+              "fecha_inicio_impresion": {
+                "type": "string"
+              },
+              "fecha_fin_impresion": {
+                "type": "string"
+              },
+              "fecha_inicio_estampacion": {
+                "type": "string"
+              },
+              "fecha_fin_estampacion": {
+                "type": "string"
+              },
+              "fecha_inicio_confeccion": {
+                "type": "string"
+              },
+              "fecha_fin_confeccion": {
+                "type": "string"
+              },
+              "fecha_inicio_empaque": {
+                "type": "string"
+              },
+              "fecha_fin_empaque": {
+                "type": "string"
+              },
+              "fecha_inicio_envio": {
+                "type": "string"
+              },
+              "fecha_fin_envio": {
+                "type": "string"
+              },
+              "fecha_inicio_alistamiento": {
+                "type": "string"
+              },
+              "fecha_fin_alistamiento": {
+                "type": "string"
+              },
+              "estado": {
+                "type": "string"
+              },
+              "proceso1": {
+                "type": "integer"
+              },
+              "proceso2": {
+                "type": "integer"
+              },
+              "proceso3": {
+                "type": "integer"
+              },
+              "proceso4": {
+                "type": "integer"
+              },
+              "proceso5": {
+                "type": "integer"
+              },
+              "proceso6": {
+                "type": "integer"
+              },
+              "proceso7": {
+                "type": "integer"
+              },
+              "proceso8": {
+                "type": "integer"
+              },
+              "proceso9": {
+                "type": "integer"
+              },
+              "proceso10": {
+                "type": "integer"
+              },
+              "especificacions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
@@ -692,193 +679,8 @@
               }
             }
           },
-          "referencia": {
-            "type": "string"
-          },
-          "OP": {
-            "type": "string"
-          },
-          "detalles_pedido": {
-            "type": "string"
-          },
-          "numero": {
-            "type": "integer"
-          },
-          "nombre_prenda": {
-            "type": "string"
-          },
-          "observaciones": {
-            "type": "string"
-          },
-          "talla": {
-            "type": "string"
-          },
-          "operadores": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nombre": {
-                  "type": "string"
-                },
-                "icono": {
-                  "type": "string"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "estado": {
-                  "type": "string"
-                },
-                "porcentaje": {
-                  "type": "number"
-                },
-                "responsable": {
-                  "type": "string"
-                },
-                "fecha_inicio": {
-                  "type": "string"
-                },
-                "fecha_fin": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "fecha_inicio_programacion": {
-            "type": "string"
-          },
-          "fecha_fin_programacion": {
-            "type": "string"
-          },
-          "fecha_inicio_trazo": {
-            "type": "string"
-          },
-          "fecha_fin_trazo": {
-            "type": "string"
-          },
-          "fecha_inicio_corte": {
-            "type": "string"
-          },
-          "fecha_fin_corte": {
-            "type": "string"
-          },
-          "fecha_inicio_edicion": {
-            "type": "string"
-          },
-          "fecha_fin_edicion": {
-            "type": "string"
-          },
-          "fecha_inicio_impresion": {
-            "type": "string"
-          },
-          "fecha_fin_impresion": {
-            "type": "string"
-          },
-          "fecha_inicio_estampacion": {
-            "type": "string"
-          },
-          "fecha_fin_estampacion": {
-            "type": "string"
-          },
-          "fecha_inicio_confeccion": {
-            "type": "string"
-          },
-          "fecha_fin_confeccion": {
-            "type": "string"
-          },
-          "fecha_inicio_empaque": {
-            "type": "string"
-          },
-          "fecha_fin_empaque": {
-            "type": "string"
-          },
-          "fecha_inicio_envio": {
-            "type": "string"
-          },
-          "fecha_fin_envio": {
-            "type": "string"
-          },
-          "fecha_inicio_alistamiento": {
-            "type": "string"
-          },
-          "fecha_fin_alistamiento": {
-            "type": "string"
-          },
-          "estado": {
-            "type": "string"
-          },
-          "proceso1": {
-            "type": "integer"
-          },
-          "proceso2": {
-            "type": "integer"
-          },
-          "proceso3": {
-            "type": "integer"
-          },
-          "proceso4": {
-            "type": "integer"
-          },
-          "proceso5": {
-            "type": "integer"
-          },
-          "proceso6": {
-            "type": "integer"
-          },
-          "proceso7": {
-            "type": "integer"
-          },
-          "proceso8": {
-            "type": "integer"
-          },
-          "proceso9": {
-            "type": "integer"
-          },
-          "proceso10": {
-            "type": "integer"
-          },
-          "especificacions": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "pedido": {
-                  "type": "string"
-                },
-                "especificacion": {
-                  "type": "object"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "especificacion": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",
@@ -886,142 +688,13 @@
           }
         }
       },
-      "NewPedidos": {
+      "NewEspecificacion": {
         "properties": {
-          "user": {
+          "pedido": {
             "type": "string"
           },
-          "cedula": {
-            "type": "integer"
-          },
-          "prenda": {
-            "type": "string"
-          },
-          "referencia": {
-            "type": "string"
-          },
-          "OP": {
-            "type": "string"
-          },
-          "detalles_pedido": {
-            "type": "string"
-          },
-          "numero": {
-            "type": "integer"
-          },
-          "nombre_prenda": {
-            "type": "string"
-          },
-          "observaciones": {
-            "type": "string"
-          },
-          "talla": {
-            "type": "string"
-          },
-          "operadores": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "fecha_inicio_programacion": {
-            "type": "string"
-          },
-          "fecha_fin_programacion": {
-            "type": "string"
-          },
-          "fecha_inicio_trazo": {
-            "type": "string"
-          },
-          "fecha_fin_trazo": {
-            "type": "string"
-          },
-          "fecha_inicio_corte": {
-            "type": "string"
-          },
-          "fecha_fin_corte": {
-            "type": "string"
-          },
-          "fecha_inicio_edicion": {
-            "type": "string"
-          },
-          "fecha_fin_edicion": {
-            "type": "string"
-          },
-          "fecha_inicio_impresion": {
-            "type": "string"
-          },
-          "fecha_fin_impresion": {
-            "type": "string"
-          },
-          "fecha_inicio_estampacion": {
-            "type": "string"
-          },
-          "fecha_fin_estampacion": {
-            "type": "string"
-          },
-          "fecha_inicio_confeccion": {
-            "type": "string"
-          },
-          "fecha_fin_confeccion": {
-            "type": "string"
-          },
-          "fecha_inicio_empaque": {
-            "type": "string"
-          },
-          "fecha_fin_empaque": {
-            "type": "string"
-          },
-          "fecha_inicio_envio": {
-            "type": "string"
-          },
-          "fecha_fin_envio": {
-            "type": "string"
-          },
-          "fecha_inicio_alistamiento": {
-            "type": "string"
-          },
-          "fecha_fin_alistamiento": {
-            "type": "string"
-          },
-          "estado": {
-            "type": "string"
-          },
-          "proceso1": {
-            "type": "integer"
-          },
-          "proceso2": {
-            "type": "integer"
-          },
-          "proceso3": {
-            "type": "integer"
-          },
-          "proceso4": {
-            "type": "integer"
-          },
-          "proceso5": {
-            "type": "integer"
-          },
-          "proceso6": {
-            "type": "integer"
-          },
-          "proceso7": {
-            "type": "integer"
-          },
-          "proceso8": {
-            "type": "integer"
-          },
-          "proceso9": {
-            "type": "integer"
-          },
-          "proceso10": {
-            "type": "integer"
-          },
-          "especificacions": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "especificacion": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",
@@ -1039,7 +712,7 @@
   },
   "tags": [
     {
-      "name": "Pedidos"
+      "name": "Especificacion"
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "especificacions",
+  "info": {
+    "name": "especificacion"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pedido": {
+      "model": "pedidos",
+      "via": "especificacions"
+    },
+    "especificacion": {
+      "type": "json"
+    }
+  }
+}
